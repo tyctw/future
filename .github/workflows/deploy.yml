@@ -20,12 +20,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: 'npm'
+          # 💡 拿掉原本固定的 cache: 'npm'，改由下方 npm i 自動處理快取
 
       - name: 安裝專案套件
         run: npm install
 
-      - name: 編譯專案靜態檔案
+      - name: 編編譯專案靜態檔案
         run: npm run build
 
       - name: 部署至 GitHub Pages 分支
