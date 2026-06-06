@@ -1,0 +1,6 @@
+{
+  "name": "高職15學群探索",
+  "description": "專為會考後考生設計的高職科系15學群探索與介紹平台",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
