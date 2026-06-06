@@ -92,11 +92,43 @@ export default function App() {
               無論你具有什麼特質與興趣，總有一個學群能讓你發光發熱。
             </p>
             
-            <div className="pt-4">
+            <div className="pt-4 pb-12">
               <button onClick={() => setIsTestOpen(true)} className="px-8 py-4 bg-slate-900 text-white font-black rounded-full hover:bg-slate-800 hover:shadow-xl hover:-translate-y-1 transition-all flex items-center gap-3 mx-auto focus:outline-none focus:ring-4 focus:ring-slate-900/20">
                 <BrainCircuit className="w-6 h-6 text-rose-400" />
                 11 分鐘免費 Holland 職涯測驗
               </button>
+            </div>
+
+            {/* Platform Features */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-8 border-t border-slate-200/60 text-left">
+              <div className="bg-white/80 backdrop-blur p-6 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-4">
+                  <BarChart3 className="w-6 h-6" />
+                </div>
+                <h4 className="font-black text-slate-800 mb-2">大數據落點預測</h4>
+                <p className="text-sm text-slate-600 font-medium leading-relaxed">提供 115 年最新會考大數據智能落點分析，精準預估錄取機率，協助制定最佳志願策略。</p>
+              </div>
+              <div className="bg-white/80 backdrop-blur p-6 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-rose-100 text-rose-600 rounded-2xl flex items-center justify-center mb-4">
+                  <BrainCircuit className="w-6 h-6" />
+                </div>
+                <h4 className="font-black text-slate-800 mb-2">Holland 職涯測驗</h4>
+                <p className="text-sm text-slate-600 font-medium leading-relaxed">以心理學職業興趣理論為基礎，11分鐘快速探索個人潛在優勢，推薦最合適的學群發展。</p>
+              </div>
+              <div className="bg-white/80 backdrop-blur p-6 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-4">
+                  <LibraryBig className="w-6 h-6" />
+                </div>
+                <h4 className="font-black text-slate-800 mb-2">15大高職學群詳解</h4>
+                <p className="text-sm text-slate-600 font-medium leading-relaxed">完整收錄全國技職15群科介紹，從學習特質、涵蓋科系到未來升學及就業出路一次掌握。</p>
+              </div>
+              <div className="bg-white/80 backdrop-blur p-6 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mb-4">
+                  <Scale className="w-6 h-6" />
+                </div>
+                <h4 className="font-black text-slate-800 mb-2">學群深度比較</h4>
+                <p className="text-sm text-slate-600 font-medium leading-relaxed">一鍵加入比較，並排檢視不同學群的差異與特色，幫助你在夢幻與務實間做出最佳抉擇。</p>
+              </div>
             </div>
           </div>
         </div>
